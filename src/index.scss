@@ -1,0 +1,45 @@
+// variables
+:root {
+  --white: #ffffff;
+  --gray1: #fbfcfc;
+  --gray2: #f2f4f5;
+  --gray3: #eef1f3;
+  --gray4: #ebeef0;
+  --gray5: #e6eaed;
+  --gray6: #dde2e6;
+  --gray7: #c7cdd2;
+  --gray8: #b1b9bf;
+  --gray9: #9ba4aa;
+  --gray10: #868f96;
+  --gray11: #646a70;
+  --gray12: #44484c;
+  --gray13: #2a2c2d;
+  --grey-14: #191919;
+  --black: #000000;
+  --blue-ocean: #00619a;
+  --blue-sky: #0272b6;
+  --blue-deep: #0b7dbb;
+  --blue-genes: #2b9cd8;
+}
+
+// light skin
+:root {
+  --bg0: var(--white);
+  --bg1: var(--gray2);
+  --bg2: var(--gray4);
+  --bg3: var(--gray8);
+  --action: var(--blue-sky);
+  --padding: 10px;
+  --border-radius: calc(var(--padding) / 2);
+}
+
+html,
+input {
+  font-family: Roboto, sans-serif;
+  font-size: large;
+}
+
+body {
+  background-color: var(--bg1);
+  padding: var(--padding);
+}
