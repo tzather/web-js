@@ -43,3 +43,68 @@ body {
   background-color: var(--bg1);
   padding: var(--padding);
 }
+
+wc-card {
+  display: inline-block;
+  transition: 0.3s;
+  box-shadow: 0px 0px 0px 1px var(--bg3);
+  border-radius: var(--border-radius);
+
+  > header {
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+    background-color: var(--bg2);
+    padding: var(--padding);
+  }
+
+  > section {
+    border-radius: var(--border-radius);
+    background-color: var(--bg0);
+    display: flex;
+    flex-direction: column;
+
+    > * {
+      padding: var(--padding);
+    }
+  }
+}
+
+wc-card:hover,
+wc-card:focus-within {
+  box-shadow: 0 4px 8px 0 var(--bg3);
+}
+
+wc-text {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: inline-block;
+  padding: calc(var(--padding) / 2);
+}
+input {
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--action);
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  padding: var(--padding);
+}
+
+input[type="button"] {
+  margin: var(--padding);
+  background-color: var(--action);
+  color: var(--white);
+}
+
+input[type="button"]:hover {
+  cursor: pointer;
+}
+
+input:hover,
+input:focus {
+  outline: none;
+  box-shadow: 0 4px 8px 0 var(--bg3);
+}
