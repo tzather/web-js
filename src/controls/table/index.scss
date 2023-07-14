@@ -1,0 +1,35 @@
+table {
+  border-collapse: collapse;  // have no spaces between the border
+
+  th, td {
+    border-bottom: 1px solid silver;
+    padding: 10px;
+    white-space: nowrap;
+  } 
+}
+
+// Make the table with fixed header and fixed first colum
+.table-scroll {
+  overflow: auto; // display the  scroll bar if needed
+  width: 100%; // take the whoel width of teh container
+  max-height: 80vh; // at max use 80% of the view height 
+
+  tr:first-child td, tr:nth-child(n+1) td:first-child {
+    background-color: white; // need a background so that the cells on the bottom is hidden 
+    position: -webkit-sticky; // always displays the items 
+    position: sticky;
+    z-index: 1; // make sure the sticky stays on top
+  }
+  
+  tr:first-child td {
+    top: 0; // fix the first row 
+  }
+  
+  tr:nth-child(n+1) td:first-child {
+    left: 0; // fix the first column 
+  }
+  
+  tr:first-child td:first-child {
+    z-index: 2; //  need the first row and first column to have a better z index so that it is always visible 
+  }
+}

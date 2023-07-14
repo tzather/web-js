@@ -1,0 +1,22 @@
+.select {
+  position: relative;
+
+  display: inline-block;
+}
+
+.selectList {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-top: none;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.selectList div {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #d4d4d4;
+}

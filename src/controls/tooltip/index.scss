@@ -1,0 +1,18 @@
+.tooltip {
+  cursor: pointer;
+
+  .tooltiptext {
+    visibility: hidden;
+    border: 2px solid yellow;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px; 
+    position: fixed;
+    top: 20px;
+    z-index: 1;
+  }
+}
+
+// .tooltip:hover .tooltiptext {
+//   visibility: visible;
+// }
